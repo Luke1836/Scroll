@@ -1,0 +1,14 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif&family=Poppins:wght@300;400&display=swap');
+
+/* GENERAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+}
