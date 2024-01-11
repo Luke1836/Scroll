@@ -34,17 +34,26 @@ img {
     width: 100%;
 }
 
-/* END OF UTILITY CLASSES */
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    text-transform: uppercase;
+    display: inline-block;
+    margin-inline-end: 3px;
+}
 
 .underline {
-    height: 0.3rem;
-    width: 5rem;
+    height: 0.4rem;
+    width: 12rem;
     margin-right: auto;
     margin-left: auto;
     background: darkturquoise;
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
 }
+
+/* END OF UTILITY CLASSES */
 
 .header {
     width: 100%;
@@ -69,7 +78,7 @@ img {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(56, 56, 56, 0.4);
+    background-color: rgba(29, 29, 29, 0.4);
     z-index: -1;
 }
 
@@ -85,7 +94,6 @@ img {
     flex-flow: row nowrap;
     padding: 2.25rem;
     z-index: 1;
-    /* background-color: rgba(255, 255, 255, 0.15); */
 }
 
 .logo {
@@ -102,7 +110,16 @@ img {
 }
 
 .btn-white {
-    margin-top: 0.5rem;    
+    margin-top: 0.5rem;
+    backdrop-filter: blur(2px);    
+}
+
+.btn-white:hover {
+    padding: 0.75rem;
+}
+
+.btn-white:active {
+    backdrop-filter: blur(4px);
 }
 
 .nav-toggle {
@@ -126,12 +143,8 @@ img {
     text-align: center;
 }
 
-ul {
-    list-style-type: none;
-}
-
-ul li {
+.container h1 {
+    font-size: 4rem;
     text-transform: uppercase;
-    display: inline-block;
-    margin-inline-end: 3px;
+    letter-spacing: 6px;
 }
