@@ -7,7 +7,9 @@
     --bordercolor: whitesmoke;
     --bfs: 1rem;
     --ff: 'Poppins', sans-serif;
-
+    --hff: 'Bebas Neue', sans-serif;
+    --bgcolor: #F8F4EC;
+    --hcolor: #3B3486;
 }
 
 /* GENERAL STYLES */
@@ -147,4 +149,20 @@ ul li {
     font-size: 4rem;
     text-transform: uppercase;
     letter-spacing: 6px;
+}
+
+.hero-section {
+    height: 100vh;
+    background-color: var(--bgcolor);
+}
+
+.hero-header {
+    background-color: var(--hcolor);
+    height: 25%;
+    font-family: var(--hff);
+    font-size: 3.5rem;
+    font-weight: 500;
+    display: grid;
+    place-content: center;
+    text-transform: uppercase;
 }
