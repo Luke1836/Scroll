@@ -5,6 +5,7 @@
 :root {
     --textcolor: whitesmoke;
     --bordercolor: whitesmoke;
+    --bodycolor: #d4d3d3;
     --bfs: 1rem;
     --ff: 'Poppins', sans-serif;
     --hff: 'Bebas Neue', sans-serif;
@@ -23,6 +24,7 @@ body {
     min-height: 100vh;
     width: 100%;
     font-family: var(--ff);
+    background-color: var(--bgcolor);
 }
 
 a {
@@ -153,16 +155,25 @@ ul li {
 
 .hero-section {
     height: 100vh;
-    background-color: var(--bgcolor);
+    margin-bottom: 1rem;
 }
 
 .hero-header {
     background-color: var(--hcolor);
-    height: 25%;
+    height: 20%;
     font-family: var(--hff);
     font-size: 3.5rem;
     font-weight: 500;
     display: grid;
     place-content: center;
     text-transform: uppercase;
+    color: var(--bgcolor);
+    letter-spacing: 0.25rem;
+}
+
+.body-container {
+    margin: 1rem;
+    background-color: var(--bodycolor);
+    box-shadow: 0px 0px -5px 0px rgba(0, 0, 0, 0.6);
+    height: 78%;
 }
