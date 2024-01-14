@@ -48,6 +48,15 @@ ul li {
     margin-inline-end: 3px;
 }
 
+.background {
+    z-index: -999;
+    position: relative;
+    height: 100vh;
+}
+
+/* END OF GENRERAL STYLES */
+
+/* UTILITY CLASSES */
 .underline {
     height: 0.4rem;
     width: 12rem;
@@ -57,16 +66,23 @@ ul li {
     margin-bottom: 0.5rem;
 }
 
+.pointer {
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    border: 2px solid transparent;
+    position: sticky;
+    top: 90%;
+    left: 94%;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+
 /* END OF UTILITY CLASSES */
 
 .header {
     width: 100%;
-    height: 100vh;
-}
-
-.background {
-    z-index: -999;
-    position: relative;
     height: 100vh;
 }
 
