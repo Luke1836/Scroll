@@ -163,40 +163,24 @@ button {
 
 .links-container {
     width: 100%;
-    height: auto;
-    background-color: var(--navbgcolor);
+    height: 12vh;
+    background: transparent;
     position: absolute;
-    top: 12%;
+    top: 0%;
     left: 0%;
-    visibility: hidden;
     z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-.show-links {
-    visibility: visible;
-    animation: showMenu 0.3s ease-in-out;
+.links-container .links li {
+    display: inline-block;
+    margin-inline-end: 4.5rem;
 }
 
-@keyframes showMenu {
-    0% {
-        transform: scaleY(0);
-    }
-
-    80% {
-        transform: scaleY(1.2);
-    }
-
-    100% {
-        transform: scaleY(1);
-    }
-}
-
-.links-container .links li a{
-    display: block;
-    border-bottom: 2px solid whitesmoke;
-    padding: 0.75rem;
-    text-align: center;
-    color: var(--linkscolor);
+.links-container .links li a {
+    display: inline-block;
 }
 
 .links-container .links li a:hover, .links-container .links li a:focus-within {
@@ -207,6 +191,7 @@ button {
 .nav-toggle {
     background: transparent;
     border: none;
+    display: none;
 }
 
 .banner {
@@ -294,6 +279,54 @@ button {
         background-color: var(--navbgcolor);
         border-bottom: 2px solid whitesmoke;
     }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .links-container .links li {
+        margin: 0;
+        display: block;
+        border-bottom: 2px solid whitesmoke;
+        padding: 0.75rem;
+        text-align: center;
+    }
+
+    .links-container .links li a{
+        color: var(--linkscolor);
+    }
+
+    .links-container {
+        width: 100%;
+        height: auto;
+        background-color: var(--navbgcolor);
+        position: absolute;
+        top: 12%;
+        left: 0%;
+        visibility: hidden;
+        z-index: 1000;
+        justify-content: center;
+    }
+
+    .show-links {
+        visibility: visible;
+        animation: showMenu 0.3s ease-in-out;
+    }
+    
+    @keyframes showMenu {
+        0% {
+            transform: scaleY(0);
+        }
+    
+        80% {
+            transform: scaleY(1.2);
+        }
+    
+        100% {
+            transform: scaleY(1);
+        }
+    }
+    
 }
 
 @media screen and (max-width: 440px){
