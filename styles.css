@@ -57,6 +57,7 @@ ul li {
 /* END OF GENRERAL STYLES */
 
 /* UTILITY CLASSES */
+
 .underline {
     height: 0.4rem;
     width: 12rem;
@@ -238,4 +239,36 @@ ul li {
 .icon-logo {
     width: 6rem;
     height: auto;
+}
+
+@media screen and (max-width: 768px){
+    .container h1 {
+        font-size: 2.5rem;
+    }
+
+    .pointer {
+        left: 90%;
+    }
+
+    .underline {
+        width: 7rem;
+    }
+}
+
+@media screen and (max-width: 440px){
+    .container h1 {
+        font-size: 2rem;
+    }
+
+    .pointer {
+        left: 86%;
+    }
+
+    .container {
+        font-size: 1rem;
+    }
+    
+    .underline {
+        width: 7rem;
+    }
 }
