@@ -16,10 +16,15 @@
 }
 
 /* GENERAL STYLES */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -267,7 +272,7 @@ ul li {
     .container {
         font-size: 1rem;
     }
-    
+
     .underline {
         width: 7rem;
     }
