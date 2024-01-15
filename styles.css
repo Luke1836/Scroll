@@ -11,6 +11,7 @@
     --hff: 'Bebas Neue', sans-serif;
     --bgcolor: #F8F4EC;
     --hcolor: #3B3486;
+    --navbgcolor: #030637;
 }
 
 /* GENERAL STYLES */
@@ -44,8 +45,6 @@ ul {
 
 ul li {
     text-transform: uppercase;
-    display: inline-block;
-    margin-inline-end: 3px;
 }
 
 .background {
@@ -140,6 +139,27 @@ ul li {
 
 .btn-white:active {
     backdrop-filter: blur(4px);
+}
+
+.links-container {
+    width: 100%;
+    height: auto;
+    background-color: var(--navbgcolor);
+    position: absolute;
+    top: 12%;
+    left: 0%;
+    visibility: hidden;
+}
+
+.links-container .links li {
+    display: block;
+    border-bottom: 2px solid whitesmoke;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+.links-container .links li:hover {
+    padding: 1rem;
 }
 
 .nav-toggle {
