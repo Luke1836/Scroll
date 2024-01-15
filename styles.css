@@ -79,6 +79,10 @@ ul li {
     place-content: center;
 }
 
+.nowrap {
+    white-space: nowrap;
+}
+
 /* END OF UTILITY CLASSES */
 
 .header {
@@ -229,4 +233,9 @@ ul li {
 .footer-icon {
     font-size: 1rem;
     color: var(--bodycolor);
+}
+
+.icon-logo {
+    width: 6rem;
+    height: auto;
 }
