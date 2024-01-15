@@ -13,6 +13,9 @@
     --hcolor: #3B3486;
     --navbgcolor: #030637;
     --footerbgcolor: #030637;
+    --underline: darkturquoise;
+    --pointer: darkturquoise;
+    --bordercolor2: #333;
 }
 
 /* GENERAL STYLES */
@@ -68,21 +71,22 @@ ul li {
     width: 12rem;
     margin-right: auto;
     margin-left: auto;
-    background: darkturquoise;
+    background: var(--underline);
     margin-bottom: 0.5rem;
 }
 
 .pointer {
-    width: 3rem;
-    height: 3rem;
-    background-color: white;
-    border: 2px solid transparent;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--pointer);
+    border: 3px solid var(--bordercolor2);
     position: fixed;
     top: 90%;
     left: 94%;
     border-radius: 50%;
     display: grid;
     place-content: center;
+    animation: bounce 2s ease-in-out infinite forwards;
 }
 
 .nowrap {
@@ -277,3 +281,15 @@ ul li {
         width: 7rem;
     }
 }
+
+@keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
