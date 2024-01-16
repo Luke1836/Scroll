@@ -18,6 +18,7 @@
     --bordercolor2: #333;
     --linkscolor: #2a2a2a;
     --fixedheaderfc: #030637; 
+    --highlight: #00634f;
 }
 
 /* GENERAL STYLES */
@@ -123,7 +124,7 @@ button {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(29, 29, 29, 0.4);
+    background-color: rgba(21, 79, 41, 0.4);
     z-index: -1;
 }
 
@@ -201,7 +202,7 @@ button {
 
 .links-container .links li a:hover, .links-container .links li a:focus-within {
     transform: scale(1.2);
-    color: var(--underline);
+    color: var(--highlight);
 }
 
 .nav-toggle {
@@ -321,16 +322,16 @@ button {
         justify-content: center;
         position: absolute;
         top: 12%;
-        left: 0%;
+        left: 0;
+        overflow: scroll;
     }
 
     .links-fixed {
-        width: 100%;
         background-color: var(--navbgcolor);
     }
 
     .links {
-        height: auto !important;
+        width: 100%;
     }
 
     .show-links {

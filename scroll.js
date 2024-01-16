@@ -35,7 +35,7 @@ window.addEventListener('scroll', () => {
         linksAnchor.forEach(link => {
             link.classList.remove('fixed-linksColor');
         });
-    }
+    }    
 });
 
 /* DISPLAY THE POINTER */
@@ -51,4 +51,31 @@ window.addEventListener('scroll', () => {
 
 
 /* Smooth SCROLL */
+linksAnchor.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const id = e.currentTarget.getAttribute("href").slice(1);
+        const element = document.getElementById(id);
+
+        const navHeight = navHeader.getBoundingClientRect().height;
+        const containerHeight = linksContainer.getBoundingClientRect().height;
+        const fixedNav = navHeader.classList.contains("fixed-header");
+        let position = element.offsetTop - navHeight;
+
+        if (!fixedNav) {
+            position = position - navHeight;
+        }
+
+        if (navHeight > 82) {
+            position = position + containerHeight;
+        }
+
+        window.scrollTo({
+            left: 0,
+            top: position,
+        });
+
+        linksContainer.style.height = 0;
+    })
+})
 
