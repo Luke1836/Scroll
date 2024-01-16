@@ -49,3 +49,6 @@ window.addEventListener('scroll', () => {
         pointer.classList.remove('show-pointer');
 });
 
+
+/* Smooth SCROLL */
+

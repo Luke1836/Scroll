@@ -149,8 +149,6 @@ button {
 
 .links-fixed {
     position: fixed;
-    width: 100%;
-    background-color: var(--navbgcolor);
 }
 
 .fixed-linksColor {
@@ -185,7 +183,7 @@ button {
 
 .links-container {
     width: 100%;
-    height: 12vh;
+    height: 12vh !important;
     background: transparent;
     position: absolute;
     top: 0%;
@@ -324,6 +322,11 @@ button {
         position: absolute;
         top: 12%;
         left: 0%;
+    }
+
+    .links-fixed {
+        width: 100%;
+        background-color: var(--navbgcolor);
     }
 
     .links {
