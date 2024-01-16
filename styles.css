@@ -93,6 +93,11 @@ button {
     display: grid;
     place-content: center;
     animation: bounce 2s ease-in-out infinite forwards;
+    visibility: hidden;
+}
+
+.show-pointer {
+    visibility: visible;
 }
 
 .nowrap {

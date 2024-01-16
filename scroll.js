@@ -31,3 +31,14 @@ window.addEventListener('scroll', () => {
         });
     }
 });
+
+/* DISPLAY THE POINTER */
+const pointer = document.querySelector('.pointer');
+
+window.addEventListener('scroll', () => {
+    const scrollHeight = window.scrollY;
+    if(scrollHeight > 200)
+        pointer.classList.add('show-pointer');
+    else
+        pointer.classList.remove('show-pointer');
+});
