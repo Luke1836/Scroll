@@ -149,6 +149,8 @@ button {
 
 .links-fixed {
     position: fixed;
+    width: 100%;
+    background-color: var(--navbgcolor);
 }
 
 .fixed-linksColor {
@@ -314,14 +316,18 @@ button {
 
     .links-container {
         width: 100%;
-        height: auto;
+        height: 0;
         background-color: var(--navbgcolor);
-        position: absolute;
-        top: 12%;
-        left: 0%;
         visibility: hidden;
         z-index: 1000;
         justify-content: center;
+        position: absolute;
+        top: 12%;
+        left: 0%;
+    }
+
+    .links {
+        height: auto !important;
     }
 
     .show-links {
