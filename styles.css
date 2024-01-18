@@ -370,6 +370,10 @@ button {
     .underline {
         width: 7rem;
     }
+
+    .links-container {
+        top: 16%;
+    }
 }
 
 @keyframes bounce {
