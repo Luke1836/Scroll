@@ -82,5 +82,5 @@ linksAnchor.forEach((link) => {
         });
 
         linksContainer.style.height = 0;
-    })
-})
+    });
+});
