@@ -51,7 +51,7 @@ window.addEventListener('scroll', () => {
 
 
 /* Smooth SCROLL */
-linksAnchor.forEach(link => {
+linksAnchor.forEach((link) => {
     link.addEventListener('click', (e) => {
         e.preventDefault();
         const id = e.currentTarget.getAttribute("href").slice(1);
@@ -66,7 +66,7 @@ linksAnchor.forEach(link => {
             position = position - navHeight;
         }
 
-        if (navHeight > 82) {
+        if (navHeight > 90) {
             position = position + containerHeight;
         }
 
