@@ -13,6 +13,12 @@ navToggle.addEventListener('click', () => {
     linksContainer.classList.toggle('show-links');
 });
 
+/* ADDING THE PRELOADER TO OUR SITE */
+const preloader = document.querySelector('.preloader');
+window.addEventListener('load', () => {
+    preloader.classList.add('hide-preloader')
+});
+
 /* FIXED HEADER */
 const navHeader = document.querySelector('.nav-header');
 const linksAnchor = document.querySelectorAll('.scroll-link');

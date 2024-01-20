@@ -73,6 +73,28 @@ button {
 
 /* UTILITY CLASSES */
 
+.preloader {
+    min-height: 100vh;
+    width: 100%;
+    background-color: white;
+    z-index: 100000;
+    position: absolute;
+    visibility: visible;
+}
+
+.hide-preloader {
+    z-index: -10000;
+    visibility: hidden;
+}
+
+.image-gif {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: auto;
+}
+
 .underline {
     height: 0.4rem;
     width: 12rem;
