@@ -71,7 +71,10 @@ linksAnchor.forEach((link) => {
         if (!fixedNav) {
             position = position - navHeight;
         }
-
+        else {
+            position = position - navHeight;
+        }
+        
         if (navHeight > 90) {
             position = position + containerHeight;
         }
