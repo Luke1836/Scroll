@@ -87,3 +87,16 @@ linksAnchor.forEach((link) => {
         linksContainer.style.height = 0;
     });
 });
+
+
+//Transitons of the sections
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting)
+            entry.target.classList.add('show');
+        else
+            entry.target.classList.remove('show');
+    })
+})
+const hiddenSections = document.querySelectorAll('.hidden');
+hiddenSections.forEach((ele) => observer.observe(ele));
