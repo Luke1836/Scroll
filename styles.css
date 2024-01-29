@@ -19,6 +19,7 @@
     --linkscolor: #2a2a2a;
     --fixedheaderfc: #030637; 
     --highlight: #00634f;
+    --scroll-watcher: #00634f;
 }
 
 /* GENERAL STYLES */
@@ -119,12 +120,21 @@ button {
     visibility: hidden;
 }
 
-.show-pointer {
+.show-pointer, .active {
     visibility: visible;
 }
 
 .nowrap {
     white-space: nowrap;
+}
+
+.scroll-watcher {
+    height: 10px;
+    width: 100%;
+    background-color: var(--scroll-watcher);
+    position: absolute;
+    top: 12%;
+    visibility: hidden;
 }
 
 /* END OF UTILITY CLASSES */
