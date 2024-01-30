@@ -39,12 +39,14 @@ body {
     width: 100%;
     font-family: var(--ff);
     background-color: var(--bgcolor);
+    cursor: none;
 }
 
 a {
     text-decoration: none;
     color: var(--textcolor);
     font-size: 1.25rem;
+    cursor: none;
 }
 
 img {
@@ -64,10 +66,6 @@ ul li {
     z-index: -999;
     position: relative;
     height: 100vh;
-}
-
-button {
-    cursor: pointer;
 }
 
 /* END OF GENRERAL STYLES */
@@ -143,6 +141,48 @@ button {
 }
 
 /* END OF UTILITY CLASSES */
+
+/* Cursor Animations */
+
+.cursor {
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgb(1, 73, 67);
+    position: absolute;
+    border-radius: 50%;
+    transition-duration: 100ms;
+    transition-timing-function: ease-out;
+    animation: mouseAnim 0.8s infinite alternate;
+    box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.6);
+    z-index: 99999999999;
+    background-image: radial-gradient(rgb(1, 171, 151) 40%, rgb(0, 91, 83) 100%);
+}
+
+@keyframes mouseAnim {
+    from {transform: scale(1);}
+    to {transform: scale(0.5);}
+}
+
+.expand {
+    animation: mouseAnimation 0.5s forwards;
+    border: 1px solid rgb(0, 62, 91);
+    box-shadow: 0px 0px 6px 8px rgba(139, 4, 42, 0.6);
+}
+
+@keyframes mouseAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    60% {
+        transform: scale(4);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
 
 .header {
     width: 100%;
