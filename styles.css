@@ -120,7 +120,7 @@ ul li {
 
 .show-pointer {
     visibility: visible;
-    z-index: 9999999;
+    z-index: 999999;
 }
 
 .nowrap {
@@ -154,10 +154,11 @@ ul li {
     transition-timing-function: ease-out;
     animation: mouseAnim 0.8s infinite alternate;
     box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.6);
-    z-index: 99999999999;
+    z-index: 999;
     background-image: radial-gradient(rgb(1, 171, 151) 40%, rgb(0, 91, 83) 100%);
 }
 
+ 
 @keyframes mouseAnim {
     from {transform: scale(1);}
     to {transform: scale(0.5);}
@@ -176,13 +177,16 @@ ul li {
 
     60% {
         transform: scale(4);
+        opacity: 0;
     }
 
     100% {
         transform: scale(1);
-        opacity: 0;
+        opacity: 1;
     }
 }
+
+/* END OF THE CURSOR ANIMATIONS */
 
 .header {
     width: 100%;
@@ -296,6 +300,7 @@ ul li {
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--textcolor);
+    z-index: 1000;
 }
 
 .container {
