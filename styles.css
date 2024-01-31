@@ -127,6 +127,11 @@ ul li {
     white-space: nowrap;
 }
 
+/* END OF UTILITY CLASSES */
+
+
+/* Section animations/transitions */
+
 .hidden {
     opacity: 0;
     transform: translateX(-100%);
@@ -140,7 +145,17 @@ ul li {
     backdrop-filter: blur(0px);
 }
 
-/* END OF UTILITY CLASSES */
+/* END OF THE SECTION ANIMATIONS/TRANSITIONS */
+
+
+/* FOOTER ANIMATIONS/TRANSITIONS */
+
+.hidden-footer {
+    opacity: 0;
+}
+
+/* END OF THE FOOTER ANIMATIONS/TRANSITIONS */
+
 
 /* Cursor Animations */
 
