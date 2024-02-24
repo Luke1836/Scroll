@@ -68,6 +68,19 @@ ul li {
     height: 100vh;
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scroll-watcher);
+    border-radius: 15px;
+}
+
 /* END OF GENRERAL STYLES */
 
 /* UTILITY CLASSES */
