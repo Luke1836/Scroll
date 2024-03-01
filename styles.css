@@ -255,6 +255,7 @@ ul li {
 
 .fixed-header {
     position: fixed;
+    width: 100%;
     background-color: var(--navbgcolor);
     border-bottom: 2px solid var(--fixedheaderfc);
 }
