@@ -93,7 +93,7 @@ linksAnchor.forEach((link) => {
             top: position,
         });
 
-        linksContainer.style.height = 0;
+        linksContainer.classList.remove('show-links');
     });
 });
 
@@ -109,6 +109,7 @@ const observer = new IntersectionObserver((entries) => {
 })
 const hiddenSections = document.querySelectorAll('.hidden');
 hiddenSections.forEach((ele) => observer.observe(ele));
+
 
 /* Cursor animation and movement */
 const cursor = document.querySelector('.cursor');
