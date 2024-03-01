@@ -140,6 +140,9 @@ ul li {
     white-space: nowrap;
 }
 
+.hidden-container {
+    visibility: hidden;
+}
 /* END OF UTILITY CLASSES */
 
 
@@ -414,7 +417,16 @@ ul li {
         display: block;
     }
 
-    .links-container .links li {
+    .links-container {
+        visibility: hidden;
+    }
+
+    .links-hamburger {
+        height: auto;
+        background-color: var(--navbgcolor);
+    }
+
+    .links-container-hamburger .links-hamburger li {
         margin: 0;
         display: block;
         border-bottom: 2px solid whitesmoke;
@@ -422,25 +434,23 @@ ul li {
         text-align: center;
     }
 
-    .links-container .links li a{
+    .links-container-hamburger .links-hamburger li a{
         color: var(--linkscolor);
     }
 
-    .links-container {
+    .links-container-hamburger {
         width: 100%;
-        height: auto;
-        background-color: var(--navbgcolor);
         visibility: hidden;
         z-index: 1000;
         justify-content: center;
         position: absolute;
-        top: 12%;
+        top: 91.4px;
         left: 0;
-        overflow: scroll;
     }
 
     .links-fixed {
         background-color: var(--navbgcolor);
+        width: 100%;
     }
 
     .links {

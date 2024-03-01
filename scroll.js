@@ -1,7 +1,9 @@
 /* Navbar Links */
 const navToggle = document.querySelector('.nav-toggle');
-const linksContainer = document.querySelector('.links-container');
-const links = document.querySelector('.links');
+const linksContainer = document.querySelector('.links-container-hamburger');
+const links = document.querySelector('.links-hamburger');
+const linksMain = document.querySelector('.links');
+const linksContainerMain = document.querySelector('.links-container');
 
 navToggle.addEventListener('click', () => {
     const linksHeight = links.getBoundingClientRect().height;
@@ -29,6 +31,7 @@ window.addEventListener('scroll', () => {
     if(scrollHeight > navHeaderHeight)
     {
         navHeader.classList.add('fixed-header');
+        linksMain.classList.add('links-fixed');
         links.classList.add('links-fixed');
         linksAnchor.forEach(link => {
             link.classList.add('fixed-linksColor');
@@ -41,7 +44,7 @@ window.addEventListener('scroll', () => {
         linksAnchor.forEach(link => {
             link.classList.remove('fixed-linksColor');
         });
-    }    
+    }
 });
 
 /* DISPLAY THE POINTER */
