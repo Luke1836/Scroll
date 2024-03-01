@@ -7,11 +7,17 @@ const linksContainerMain = document.querySelector('.links-container');
 
 navToggle.addEventListener('click', () => {
     const linksHeight = links.getBoundingClientRect().height;
+    const navHeaderHeight = navHeader.getBoundingClientRect().height;
     const linksContainerHeight = linksContainer.getBoundingClientRect().height;
     if(linksContainerHeight === 0)
+    {
+        linksContainer.style.top = `${navHeaderHeight}px`
         linksContainer.style.height = `${linksHeight}px`;
+    }
     else
+    {
         linksContainer.style.height = 0;
+    }
     linksContainer.classList.toggle('show-links');
 });
 
@@ -72,10 +78,10 @@ linksAnchor.forEach((link) => {
         let position = element.offsetTop - navHeight;
 
         if (!fixedNav) {
-            position = position - navHeight;
+            position = position;
         }
         else {
-            position = position - navHeight;
+            position = position;
         }
 
         if (navHeight > 90) {
