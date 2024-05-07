@@ -512,7 +512,7 @@ ul li {
 @media screen and (max-height: 480px) {
     .container {
         span {
-            font-size: 1.5rem;
+            font-size: 1.75rem;
         }
 
         .underline {
@@ -527,7 +527,13 @@ ul li {
     .banner {
         margin-top: 1.5rem;
     }
+
+    .scroll-link {
+        padding: 0.5rem;
+        backdrop-filter: blur(12px);
+    }
 }
+
 @keyframes bounce {
     0% {
       transform: scale(1);
