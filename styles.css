@@ -519,7 +519,13 @@ ul li {
             height: 5px;
         }
 
-        
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    .banner {
+        margin-top: 1.5rem;
     }
 }
 @keyframes bounce {
