@@ -509,6 +509,19 @@ ul li {
 
 }
 
+@media screen and (max-height: 480px) {
+    .container {
+        span {
+            font-size: 1.5rem;
+        }
+
+        .underline {
+            height: 5px;
+        }
+
+        
+    }
+}
 @keyframes bounce {
     0% {
       transform: scale(1);
